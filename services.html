@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Ad Agency</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Our Services</h2>
+        <div class="row" id="service-list">
+            <div class="col-md-4 mb-4">
+                <div class="card service-card p-3 shadow-sm" onclick="showServiceDetails('Media Planning', 'Planning and buying media space for advertising.')">
+                    <h5 class="card-title">Media Planning</h5>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card service-card p-3 shadow-sm" onclick="showServiceDetails('Creative Services', 'Developing creative content for advertisements.')">
+                    <h5 class="card-title">Creative Services</h5>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card service-card p-3 shadow-sm" onclick="showServiceDetails('Digital Marketing', 'SEO, social media management, and online advertising.')">
+                    <h5 class="card-title">Digital Marketing</h5>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card service-card p-3 shadow-sm" onclick="showServiceDetails('Organizing and executing events, such as product launches, conferences, or trade shows.')">
+                    <h5 class="card-title">Event Management</h5>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card service-card p-3 shadow-sm" onclick="showServiceDetails('Managing the client's reputation and communicating with the public through media releases, crisis management, and other PR services.')">
+                    <h5 class="card-title">Public Relations</h5>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card service-card p-3 shadow-sm" onclick="showServiceDetails('Conducting research to understand the target audience, market trends, and competitors.')">
+                    <h5 class="card-title">Market Research</h5>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card service-card p-3 shadow-sm" onclick="showServiceDetails('Developing and maintaining a brand's identity, including logo design, packaging, and overall brand strategy.')">
+                    <h5 class="card-title">Branding</h5>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card service-card p-3 shadow-sm" onclick="showServiceDetails(' Creating and managing social media ad campaigns to reach specific audiences.')">
+                    <h5 class="card-title">Social Media Advertising</h5>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card service-card p-3 shadow-sm" onclick="showServiceDetails('Providing regular analytics and performance reports to help clients understand the effectiveness of their advertising campaigns.')">
+                    <h5 class="card-title">Analytics and Reporting</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="service-details" class="container my-5 d-none">
+        <div class="card p-4 shadow-lg">
+            <h3 id="service-title"></h3>
+            <p id="service-description"></p>
+            <button class="btn btn-primary" onclick="backToServices()">Back to Services</button>
+        </div>
+    </section>
+    
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Ad Agency. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

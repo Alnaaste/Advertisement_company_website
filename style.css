@@ -1,0 +1,89 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+}
+
+body {
+    background: url('background.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.logo img {
+    width: 120px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    color: black;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: 2px solid red;
+    border-radius: 20px;
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: red;
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 10%;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.hero h3 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 15px;
+    line-height: 1.5;
+}
